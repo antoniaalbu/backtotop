@@ -1,0 +1,279 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.anchor-links {
+    position: absolute;
+    bottom: 40%; 
+    left: 15.5%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; 
+    z-index: 2;
+}
+
+.anchor-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    transition: color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.anchor-links a:hover {
+    color: #000000;
+    transform: scale(1.1);
+}
+
+
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.expertise img {
+    width: 100%; 
+    height: auto;
+    animation: fadeInFromTop 2s ease-out; 
+}
+
+.expertise h1 {
+    position: absolute;
+    bottom: 70%; 
+    left: 23.5%;
+    transform: translateX(-50%); 
+    color: white; 
+    font-size: 70px; 
+    text-align: center;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.expertise-link {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.expertise-link:hover h1 {
+    text-decoration: underline; 
+}
+
+
+.expertise .text {
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.expertise .text p {
+    margin-bottom: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.descriptions {
+    color: white;
+}
+
+.descriptions ul {
+    list-style-type: none;
+}
+
+.descriptions li {
+    scroll-margin-top: 13vh; 
+}
+
+.descriptions h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.descriptions h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.descriptions p {
+    font-size: 1.1rem;
+}
+
+.descriptions .computer_networks {
+    margin-top: 5%;
+    background-color: #03349b;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.descriptions .computer_networks .text {
+    width: 30%; 
+    margin-left: 30px;
+}
+
+.descriptions .computer_networks .back-to-top {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.descriptions .computer_networks .image {
+    width: 65%;
+    height: auto;
+    text-align: right; 
+}
+
+.descriptions img {
+    width: 100%;
+    height: auto;
+}
+
+.descriptions .ai {
+    margin-top: 10%;
+    background-color: #5a9ac6;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    margin-bottom: 40px; 
+}
+
+.descriptions .ai img {
+    width: 60%; 
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.descriptions .ai .text {
+    width: 30%; 
+    margin-right: 50px;
+}
+
+.descriptions .ai .back-to-top {
+    margin-right: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.descriptions .ai h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.descriptions .ai h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.descriptions .ai p {
+    font-size: 1.1rem;
+}
+
+.descriptions .erp {
+    margin-top: 10%;
+    background-color: #23485c; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.descriptions .erp .text {
+    width: 30%;
+    margin-left: 30px;
+    color: white;
+}
+
+.descriptions .erp .back-to-top {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.descriptions .erp .image {
+    width: 65%;
+    text-align: right;
+}
+
+.descriptions .erp img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.descriptions .web_development {
+    margin-top: 10%;
+    background-color: #448ea8;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin-bottom: 40px; 
+}
+
+.descriptions .web_development img {
+    width: 60%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.descriptions .web_development .text {
+    width: 30%; 
+    margin-right: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.descriptions .web_development h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.descriptions .web_development h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.descriptions .web_development p {
+    font-size: 1.1rem;
+}
+
+.descriptions .web_development .back-to-top {
+    margin-right: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.back-to-top a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-to-top a:hover {
+    color: #000000; 
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
